@@ -1,3 +1,8 @@
 import {Client, Account, Databases} from 'react-native-appwrite'
 
-const client = new Client().setEndpoint("https://syd.cloud.appwrite.io/v1").setProject("6895fed1002019c9afa1").setPlatform("co.swastik.tracker")
+export const client = new Client()
+.setEndpoint(process.env.EXPO_PUBLIC_APPWRITE_ENDPOINT!)
+.setProject(process.env.EXPO_PUBLIC_APPWRITE_PROJECT_ID!)
+.setPlatform(process.env.EXPO_PUBLIC_APPWRITE_PROJECT_PLATFROM!)
+
+export const account = new Account(client)
