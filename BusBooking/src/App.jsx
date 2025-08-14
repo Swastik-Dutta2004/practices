@@ -1,13 +1,10 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import { createBrowserRouter } from 'react-router-dom'
-import Navbar from './assets/componenets/Navbar'
-import about from './assets/componenets/About'
-import Home from './assets/componenets/Home'
-import Contact from './assets/componenets/Home'
-import Login from './assets/componenets/Logoin'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Navbar from './componenets/Navbar'
+import About from './componenets/About'
+import Home from './componenets/Home'
+import Contact from './componenets/Contact'
+import Login from './componenets/Logoin'
 
 
 function App() {
@@ -18,7 +15,7 @@ function App() {
     },
     {
       path:"/Login",
-      element:<login/>
+      element:<Login/>
     },
     {
       path:"/contact",
@@ -31,8 +28,9 @@ function App() {
   ])
 
   return (
-   <div className="conatiner">
-    <Navbar/>
+    <div>
+      <RouterProvider router={router}/>
+      <Navbar/>
    </div>
   )
 }
