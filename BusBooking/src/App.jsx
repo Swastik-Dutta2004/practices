@@ -47,12 +47,16 @@ function App() {
       <div className="relative z-10">
         <Navbar />
         <RouterProvider router={router} />
-        <h1 className='text-white relative'>India's No. 1 online bus ticket booking site</h1>
-        <div className="bg-image">
-          <img className='w-full h-80' src="https://i.pinimg.com/1200x/7a/d7/7f/7ad77fdae977c55f86893ae07d879676.jpg" alt="" />
-        </div>
+        <div className="bg-image pt-15 border-none rounded-3xl overflow-hidden">
+  <img
+    className="h-80 w-full object-cover"
+    src="https://i.pinimg.com/1200x/7a/d7/7f/7ad77fdae977c55f86893ae07d879676.jpg"
+    alt=""
+  />
+</div>
 
-        <div className="ticket mt-15 flex flex-col items-center w-full absolute top-50">
+
+        {/* <div className="ticket mt-15 flex flex-col items-center w-full absolute top-50">
           <div className="ride bg-purple-200 p-6 rounded-xl w-80% flex gap-5">
             <div className="input flex flex-col items-center justify-center gap-3">
               <input
@@ -89,10 +93,10 @@ function App() {
 
           </div>
 
-          <button className="bg-purple-800 text-white border-none rounded-3xl w-52 h-10 font-bold mt-4 hover:bg-purple-900 transition duration-200 ">
+          <button className="bg-purple-950 text-white border-none rounded-3xl w-52 h-10 font-bold mt-4 hover:bg-white hover:text-black transition duration-200 ">
             Search Bus
           </button>
-        </div>
+        </div> */}
 
       </div>
 
