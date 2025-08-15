@@ -37,21 +37,32 @@ function App() {
         <Navbar />
         <RouterProvider router={router} />
 
-        <div className="ticket mt-15 flex flex-col items-center">
-          <div className="ride bg-white p-6 rounded-xl max-w-md w-full">
+        <div className="ticket mt-15 flex flex-col items-center w-full">
+          <div className="ride bg-purple-200 p-6 rounded-xl max-w-md w-full flex gap-5">
             <input
               type="text"
               placeholder="From"
-              className="w-full border p-3 mb-4 rounded-lg focus:outline-none"
+              className="w-full border p-3 mb-4 rounded-lg focus:outline-none bg-purple-100"
             />
             <input
               type="text"
               placeholder="To"
-              className="w-full border p-3 rounded-lg focus:outline-none"
+              className="w-full border p-3 mb-4 rounded-lg focus:outline-none  bg-purple-100"
             />
+            <input
+              type="text"
+              placeholder="Calender"
+              className="w-full border p-3 mb-4 rounded-lg focus:outline-none  bg-purple-100"
+            />
+            <input
+              type="text"
+              placeholder="Distance"
+              className="w-full border p-3 mb-4 rounded-lg focus:outline-none  bg-purple-100"
+            />
+            
           </div>
 
-          <button className="bg-amber-600 border-2 rounded-3xl w-52 h-10 font-bold mt-4">
+          <button className="bg-amber-600 border-2 rounded-3xl w-52 h-10 font-bold mt-4 hover:bg-amber-700 transition duration-200 ">
             Search Bus
           </button>
         </div>
