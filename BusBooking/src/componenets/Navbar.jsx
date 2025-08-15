@@ -2,12 +2,12 @@ import React from 'react';
 
 const Navbar = () => {
   return (
-    <nav className="bg-yellow-500 shadow-lg fixed w-full top-0 z-50 p">
+    <nav className="bg-yellow-500 shadow-lg fixed w-full top-0 z-50">
       
         <div className="flex justify-between items-center h-16">
           
           {/* Logo */}
-          <div className="flex items-center gap-2 left-10">
+          <div className="flex items-center gap-2 left-10  pl-4">
             <img className="h-10 w-10" src="buslogo.svg" alt="Bus Logo" />
             <span className="text-2xl font-bold text-white tracking-wide">
               NextBus
@@ -15,7 +15,7 @@ const Navbar = () => {
           </div>
 
           {/* Menu Links */}
-          <ul className="hidden md:flex gap-6 text-white font-medium">
+          <ul className="hidden md:flex gap-6 text-white font-medium pr-4">
             <li>
               <a href="/" className="hover:text-black transition duration-200">
                 Home
@@ -42,7 +42,7 @@ const Navbar = () => {
           </ul>
 
           {/* Mobile Menu Button */}
-          <div className="md:hidden flex items-center">
+          <div className="md:hidden flex items-center pr-4">
             <button className="text-white focus:outline-none">
               <svg
                 className="w-6 h-6"
