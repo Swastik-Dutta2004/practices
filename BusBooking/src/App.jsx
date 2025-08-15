@@ -6,6 +6,7 @@ import About from './componenets/About'
 import Home from './componenets/Home'
 import Contact from './componenets/Contact'
 import Login from './componenets/Logoin'
+import Calender from './componenets/Calender'
 
 function App() {
 
@@ -39,67 +40,12 @@ function App() {
   ])
 
   return (
-    <div className="relative bg-bus-pattern bg-cover bg-center min-h-screen">
-      {/* Blur Overlay */}
-      <div className="absolute inset-0 backdrop-blur-sm bg-blue-900/30"></div>
+    <div data-theme="synthwave">
+      <Navbar/>
 
-      {/* Page Content */}
-      <div className="relative z-10">
-        <Navbar />
-        <RouterProvider router={router} />
-        <div className="bg-image pt-15 border-none rounded-3xl overflow-hidden">
-  <img
-    className="h-80 w-full object-cover"
-    src="https://i.pinimg.com/1200x/7a/d7/7f/7ad77fdae977c55f86893ae07d879676.jpg"
-    alt=""
-  />
-</div>
-
-
-        {/* <div className="ticket mt-15 flex flex-col items-center w-full absolute top-50">
-          <div className="ride bg-purple-200 p-6 rounded-xl w-80% flex gap-5">
-            <div className="input flex flex-col items-center justify-center gap-3">
-              <input
-                type="text"
-                placeholder="From"
-                value={Fromlocation}
-                onChange={(e) => setFromlocation(e.target.value)}
-                className="w-full border p-3 rounded-lg focus:outline-none bg-purple-100"
-              />
-
-              <img className="" src="arrow.svg" alt="" onClick={exchange} />
-
-              <input
-                type="text"
-                placeholder="To"
-                value={Tolocation}
-                onChange={(e) => setTolocation(e.target.value)}
-                className="w-full border p-3 rounded-lg focus:outline-none bg-purple-100"
-              />
-            </div>
-
-            <div className="others">
-              <input
-                type="text"
-                placeholder="Calender"
-                className="w-full border p-3 mb-4 rounded-lg focus:outline-none  bg-purple-100"
-              />
-              <input
-                type="text"
-                placeholder="Distance"
-                className="w-full border p-3 mb-4 rounded-lg focus:outline-none  bg-purple-100"
-              />
-            </div>
-
-          </div>
-
-          <button className="bg-purple-950 text-white border-none rounded-3xl w-52 h-10 font-bold mt-4 hover:bg-white hover:text-black transition duration-200 ">
-            Search Bus
-          </button>
-        </div> */}
-
+      <div className='w-full min-h-screen flex flex-col justify-center items-center'>
+        <Calender/>
       </div>
-
     </div>
 
   )
