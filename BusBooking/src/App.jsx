@@ -38,7 +38,7 @@ function App() {
         <RouterProvider router={router} />
 
         <div className="ticket mt-15 flex flex-col items-center">
-          <div className="ride bg-purple-200 p-6 rounded-xl w-80% flex gap-5">
+          <div className="ride bg-purple-200 p-6 rounded-xl w-80% flex gap-5 justify-center">
             <input
               type="text"
               placeholder="From"
